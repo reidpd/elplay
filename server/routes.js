@@ -9,6 +9,9 @@ const spotifyApi = new Spotify(credentials);
 const STATE_KEY = 'spotify_auth_state';
 const scopes = ['user-read-private', 'user-read-email'];
 
+/** Generates a random string containing numbers and letters of N characters */
+const generateRandomString = N => (Math.random().toString(36)+Array(N).join('0')).slice(2, N+2);
+
 /**
  * The /login endpoint
  * Redirect the client to the spotify authorize url, but first set that user's
