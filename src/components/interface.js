@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { credentials } from '../../config/auth.js';
-import {} from '../../actions';
+import credentials from '../config/auth.js';
+import {} from '../actions';
 
 const Spotify = require('spotify-web-api-node');
 const spotifyApi = new Spotify(credentials);

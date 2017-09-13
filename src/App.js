@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Splash from 'components/splash.js';
-import Interface from 'components/interface.js';
-import Error from 'components/error.js'
+import Splash from './components/splash.js';
+import Interface from './components/interface.js';
+import Error from './components/error.js'
 
 import './App.css';
 
